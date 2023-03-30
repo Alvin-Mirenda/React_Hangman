@@ -1,0 +1,67 @@
+:root{
+  --color-orange: rgb(255, 106, 61);
+  --color-arriere-plan: #161616;
+  --font-nunito: 'Nunito', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-nunito);
+  background-color: var(--color-arriere-plan);
+  color: var(--color-orange);
+}
+
+/* scoll-bar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-orange);
+  border-radius: 20px;
+  /* height: 1%; */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-arriere-plan);
+}
+
+button{
+  background-color: var(--color-orange);
+  padding: 0.5em 5em;
+  margin: 1em;
+  border: none;
+  border-radius: 1em;
+  width: 5%;
+  /* border: solid 2px red; */
+}
+
+p{
+  font-size: 1.4em;
+}
+
+.canvas{
+  border: solid var(--color-orange) 2px;
+  
+  padding: 15px;
+}
+
+.App {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;
+  width: 70vw;
+  margin-top: 2em;
+  /* border: solid 2px red; */
+}
